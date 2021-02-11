@@ -1,4 +1,6 @@
+import React from 'react';
 import styled from 'styled-components';
+import Head from 'next/head';
 import db from '../db.json';
 import Widget from '../src/components/Widget';
 import Footer from '../src/components/Footer';
@@ -21,33 +23,38 @@ export const QuizContainer = styled.div`
     margin: auto;
     padding: 15px;
   }
-`
+`;
 
 export default function Home() {
   return (
-    <QuizBackground backgroundImage={db.bg}>
-      <QuizContainer>
-        <Widget>
-          <Widget.Header>
-            <h1>Clash Royale</h1>
-          </Widget.Header>
+    <>
+      <Head>
+        <title>Clash Royale - Alura Quiz</title>
+      </Head>
+      <QuizBackground backgroundImage={db.bg}>
+        <QuizContainer>
+          <Widget>
+            <Widget.Header>
+              <h1>Clash Royale</h1>
+            </Widget.Header>
 
-          <Widget.Content>
-            <p>Lorem ipsum dolor sit amet...</p>
-          </Widget.Content>
-        </Widget>
-        <Widget>
-          <Widget.Header>
-            <h1>Clash Royale</h1>
-          </Widget.Header>
-          <Widget.Content>
+            <Widget.Content>
+              <p>Lorem ipsum dolor sit amet...</p>
+            </Widget.Content>
+          </Widget>
+          <Widget>
+            <Widget.Header>
+              <h1>Clash Royale</h1>
+            </Widget.Header>
+            <Widget.Content>
 
-            <p>Lorem ipsum dolor sit amet...</p>
-          </Widget.Content>
-        </Widget>
-        <Footer />
-      </QuizContainer>
-      <GitHubCorner projectUrl="https://github.com/willerson" />
-    </QuizBackground>
-  ) ;
+              <p>Lorem ipsum dolor sit amet...</p>
+            </Widget.Content>
+          </Widget>
+          <Footer />
+        </QuizContainer>
+        <GitHubCorner projectUrl="https://github.com/willerson" />
+      </QuizBackground>
+    </>
+  );
 }

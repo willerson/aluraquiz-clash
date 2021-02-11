@@ -1,28 +1,103 @@
 {
     "bg": "https://i.pinimg.com/originals/a2/fb/23/a2fb230ac13e58c9232bc22892220593.png",
-    "title": "Quiz CSS da Alura",
-    "description": "Teste os seus conhecimentos sobre CSS e vamos ver quantos layouts você vai deixar de quebrar",
+    "title": "Quiz Clash da Alura",
+    "description": "Você sabe tudo sobre Clash Royale? Quiz testa seus conhecimentos",
     "questions": [
       {
-        "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-        "title": "Como fazer um seletor por id via CSS?",
+        "image": "https://blog.uptodown.com/wp-content/uploads/clash-royale-touchdown.jpg.webp",
+        "title": "Quando o Modo Touchdown foi lançado, uma carta foi retirada após muitas reclamações dos jogadores. Que carta foi essa?",
         "description": "Essa é pra aquecer",
         "answer": 2,
         "alternatives": [
-          ".elemento",
-          "*elemento",
-          "#elemento",
-          "%elemento"
+          "Gigante",
+          "Príncipe",
+          "Corredor",
+          "Balão"
         ]
       },
       {
-        "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-        "title": "Como fazer um background gradiente com css?",
+        "image": "https://i0.wp.com/blogdoiphone.com/wp-content/uploads/2017/03/ClashRoyale_BClans2.jpg?resize=750%2C525&ssl=1",
+        "title": "No início do jogo, o modo de batalha em duplas não existia no Clash Royale",
         "description": "Faz tempo em haha",
         "answer": 0,
         "alternatives": [
-           "background: linear-gradient(#e66465, #9198e5);",
-           "background: gradient(#e66465, #9198e5);"
+           "Verdadeiro",
+           "Falso"
+        ]
+      },
+      {
+        "image": "https://s2.glbimg.com/BCb9K5PmdWmsg1a3FDpvscq6Dh8=/68x0:1001x525/1000x0/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2020/I/q/j4KA8PTFeWmSQejgrOeg/mosqueteira.jpeg",
+        "title": "A Mosqueteira já chegou a custar cinco pontos de elixir",
+        "description": "Faz tempo em haha",
+        "answer": 0,
+        "alternatives": [
+           "Verdadeiro",
+           "Falso"
+        ]
+      },
+      {
+        "image": "https://i.ytimg.com/vi/joWcgJBKYjg/maxresdefault.jpg",
+        "title": "Quais são as primeiras cartas lendárias a ficarem disponíveis no Clash Royale?",
+        "description": "Essa é pra aquecer",
+        "answer": 0,
+        "alternatives": [
+          "Mineiro e Lava Hound",
+          "Princesa e O Tronco",
+          "Bruxa e Mago de Gelo",
+          "Lava Hound e Princesa"
+        ]
+      },
+      {
+        "image": "https://s2.glbimg.com/o-rTx5ZUu9vZWvXaJc1fY_xe5SA=/0x32:750x454/1000x0/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2020/A/0/FwD1CEToaCudB95HBP8g/9a277fa0-3a5f-4eee-9dd4-654eea477025.png",
+        "title": "Qual é o nome dessa carta na versão PT-BR do Clash Royale?",
+        "description": "Essa é pra aquecer",
+        "answer": 2,
+        "alternatives": [
+          "Furacão",
+          "Tempestade",
+          "Tornado",
+          "Ciclone"
+        ]
+      },
+      {
+        "image": "https://s2.glbimg.com/1gksN7bPCC2Byq1WpqiemsWCsfI=/0x131:720x536/1000x0/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2019/g/u/htWnfYSgSxBTzR4MgsDA/xbow.png",
+        "title": "A X-Besta, tida como uma das cartas mais 'apelativas' do jogo, acertava tropas aéreas até receber um nerf",
+        "description": "Faz tempo em haha",
+        "answer": 1,
+        "alternatives": [
+           "Falso",
+           "Verdadeiro"
+        ]
+      },
+      {
+        "image": "https://s2.glbimg.com/dbpecauZpdnFnCyioF3jIwt7GNg=/0x0:1280x720/1000x0/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2018/J/X/gz9m0WSKWWN2omvSumQg/hq720.jpg",
+        "title": "A Bruxa já custou quatro pontos de elixir no jogo",
+        "description": "Faz tempo em haha",
+        "answer": 1,
+        "alternatives": [
+           "Verdadeiro",
+           "False"
+        ]
+      },
+      {
+        "image": "https://s2.glbimg.com/fmarxf95EBU2ELYPqAQEvDNPfFo=/0x0:750x422/1000x0/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2020/0/Z/dUHgSUTwyLIEW16XFpFQ/16d866c6-4662-4f1f-833c-7d70c9434d3b.png",
+        "title": "O Golem não pode ser empurrado pelo Tronco",
+        "description": "Faz tempo em haha",
+        "answer": 1,
+        "alternatives": [
+           "Verdadeiro",
+           "False"
+        ]
+      },
+      
+      {
+        "image": "https://s2.glbimg.com/FNfUPkc9RMG3PQZXzFV-P23oYOo=/68x0:1001x525/1000x0/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2020/6/5/LycihKQ8CR6Ya0RH7AoQ/p.e.k.k.a..jpeg",
+        "title": "Apesar do substantivo feminino, a P.E.K.K.A é um personagem masculino no jogo",
+        "description": "Faz tempo em haha",
+        "answer": 1,
+        "alternatives": [
+           "Verdadeiro",
+           "False"
         ]
       }
     ],
