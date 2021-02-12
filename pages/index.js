@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import Head from 'next/head';
+import { useRouter } from 'next/router';
+
 import db from '../db.json';
 import Widget from '../src/components/Widget';
 import Footer from '../src/components/Footer';
@@ -26,6 +28,9 @@ export const QuizContainer = styled.div`
 `;
 
 export default function Home() {
+  const router = useRouter();
+  const [name, setName] = React.useState('');
+
   return (
     <>
       <Head>
@@ -39,7 +44,30 @@ export default function Home() {
             </Widget.Header>
 
             <Widget.Content>
-              <p>Lorem ipsum dolor sit amet...</p>
+              <form
+                // eslint-disable-next-line func-names
+                onSubmit={function (event) {
+                  event.preventDefault();
+                  router.push(`/quiz?name=${name}`);
+                  // eslint-disable-next-line no-console
+                  console.log('Fazendo uma submissão por meio do React');
+                }}
+              >
+                <input
+                  placeholder="Diga seu nome."
+                  // eslint-disable-next-line func-names
+                  onChange={function (infosDoEvento) {
+                    // State
+                    // name = infosDoEvento.target.value;
+                    // console.log(infosDoEvento);
+                    setName(infosDoEvento.target.value);
+                  }}
+                />
+                <button type="submit" disabled={name.length === 0}>
+                  Jogar
+                  {name}
+                </button>
+              </form>
             </Widget.Content>
           </Widget>
           <Widget>
@@ -47,7 +75,6 @@ export default function Home() {
               <h1>Clash Royale</h1>
             </Widget.Header>
             <Widget.Content>
-
               <p>Lorem ipsum dolor sit amet...</p>
             </Widget.Content>
           </Widget>
