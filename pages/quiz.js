@@ -1,3 +1,5 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable array-callback-return */
 /* eslint-disable linebreak-style */
 import React from 'react';
 import db from '../db.json';
@@ -7,13 +9,13 @@ import QuizContainer from '../src/components/QuizContainer';
 import AlternativeForm from '../src/components/AlternativeForm';
 import Button from '../src/components/Button';
 
-// 01:03:34
-
 // eslint-disable-next-line react/prop-types
 function ResultWidget({ results }) {
   return (
     <Widget>
-      <Widget.Header>Tela de Resultado:</Widget.Header>
+      <Widget.Header>
+        Tela de Resultado:
+      </Widget.Header>
 
       <Widget.Content>
         <p>
@@ -32,14 +34,12 @@ function ResultWidget({ results }) {
         </p>
         <ul>
           {results.map((result, index) => {
-            <li key={`result__${result}`}>
+            <li>
               #
               {index + 1}
               {' '}
               Resultado:
-              {result === true
-                ? 'Acertou'
-                : 'Errou'}
+              {result === true ? 'Acertou' : 'Errou'}
             </li>;
           })}
         </ul>
@@ -207,9 +207,8 @@ export default function QuizPage() {
 
         {screenState === screenStates.LOADING && <LoadingWidget />}
 
-        {screenState === screenStates.RESULT && (
-          <ResultWidget results={results} />
-        )}
+        {screenState === screenStates.RESULT && <ResultWidget results={results} />
+        }
 
         {/* <LoadingWidget /> */}
       </QuizContainer>
