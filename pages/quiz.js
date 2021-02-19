@@ -10,7 +10,8 @@ import AlternativeForm from '../src/components/AlternativeForm';
 import Button from '../src/components/Button';
 
 // eslint-disable-next-line react/prop-types
-function ResultWidget({ results }) {
+function ResultWidget({ results, props }) {
+  console.log(props)
   return (
     <Widget>
       <Widget.Header>
@@ -33,15 +34,17 @@ function ResultWidget({ results }) {
           perguntas
         </p>
         <ul>
-          {results.map((result, index) => {
-            <li>
+          {results.map((result, index) => (
+            <li key={`result__${result}`}>
               #
               {index + 1}
               {' '}
               Resultado:
-              {result === true ? 'Acertou' : 'Errou'}
-            </li>;
-          })}
+              {result === true
+                ? 'Acertou'
+                : 'Errou'}
+            </li>
+          ))}
         </ul>
       </Widget.Content>
     </Widget>
